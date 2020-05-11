@@ -24,7 +24,7 @@ export class ResetPasswordPage implements OnInit {
     this.authService.resetPassword(this.email).then(() => {
       alert('Revisa tu correo y sigue las indicaciones para recuperar tu contraseña');
       this.router.navigate(['/login']);
-    }).catch((error) => console.log(error));
+    }).catch(() => alert('Error al intentar recuperar la contraseña o el usuario no existe') );
   }
 
 }
