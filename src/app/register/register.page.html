@@ -1,0 +1,30 @@
+<ion-header>
+  
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pagina de registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  
+  <form autocomplete="off" (submit)="doRegister()">
+    <ion-item>
+      <ion-label position="floating" > Correo electrónico <span class="text-danger">*</span></ion-label>
+      <ion-input type="text" [(ngModel)]="email" name="email" required="true" autocomplete="on"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" > Nombre <span class="text-danger">*</span></ion-label>
+      <ion-input type="text" [(ngModel)]="name" name="name" required="true" autocomplete="on"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" > Contraseña <span class="text-danger">*</span></ion-label>
+      <ion-input [(ngModel)]="password" type="password" name="password" required="true"></ion-input>
+    </ion-item>
+    
+    <ion-button class="ion-margin-top" type="submit" expand="block">Registrar</ion-button>
+  </form>
+</ion-content>
