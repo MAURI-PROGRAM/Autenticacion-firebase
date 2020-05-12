@@ -22,5 +22,17 @@ export const firebaseConfig = {
 };
 ```
 
+#### Paso número 4
+Dentro del proyecto en el archivo packege.json intercambia los valores de la variable de cordova-plugin-googleplus segun la documentacion de cordova google plus
+
+```javascript
+
+"cordova-plugin-googleplus": {
+        "REVERSED_CLIENT_ID": "<REVERSED_CLIENT_ID>",
+        "WEB_APPLICATION_CLIENT_ID": "<WEB_APPLICATION_CLIENT_ID>"
+      }
+```
+
+
 # Listo para el despliegue, ahora ya sabes que hacer...
  psst... psst..  (ionic serve)
